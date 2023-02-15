@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    width: 100%;
+    position: relative;
+}
+
+.search > input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(100, 100, 100);
+    font-family: 'Sofia', cursive;
+    font-size: 30px;
+}
+
+.search > i {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.element{
+    border: 1px solid rgb(229, 255, 0);
+    border-radius: 20px;
+    margin-left: 2px;
+    padding-left: 20px;
+    aspect-ratio: 1/1;
+}
+.element h4{
+    font-family: 'Sofia', cursive;
+    font-size: 45px;
+}
+.nav > i {
+    position:absolute;
+    right: 60px;
+}
+.navbar > i1{
+    position: absolute;
+    
+}
+.navbar > i2 {
+    position: absolute;
+    right: 10px;
+}
+.navbar > i3 {
+    position: absolute;
+    right: 30px;
+}

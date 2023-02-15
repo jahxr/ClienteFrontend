@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+#user {
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 100vh;
+}
+#logo {
+    padding: 10px;
+    height: 20vh;
+}
+#formulario{
+    background-color: rgba(0, 0, 0, 0.555);
+    color: #fff;
+    width: 390px;
+    height: 600px;
+    border-radius: 8px;
+    padding: 10px 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#formulario h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Sofia', cursive;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 15px;
+   
+}
+.control-formulario{
+    width: 50px;
+    padding: 15%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-width: 0;
+    
+    
+}
+.text-box{
+    background-color: #33333356;
+}
+.boton{
+    background-color: rgb(177, 81, 81);
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 20px;
+    padding: 30px;
+    
+}
+.boton:hover{
+    background-color: rgb(179, 50, 11);
+}
+.checkbox {
+    Text-align: left;
+}
