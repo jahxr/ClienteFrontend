@@ -13,32 +13,35 @@
        
     </div>
     <div class="nav">
-        <img class="delivereat" src="img/delivereat.webp" alt="">
         <i class="fa-solid fa-bag-shopping"></i>
     </div>
     <div class="search">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" name="" id="" placeholder="    Search">
     </div>
-    <div class="menu">
-        <div class="element">
-            <h4>Comida</h4>
-           
-        </div>
-        <div class="element">
-            <h4>Bebida</h4>
-        </div>
-        <div class="element">
-            <h4>Super</h4>
-        </div>
-        <div class="element">
-            <h4>postres</h4>
-        </div>
+    <div class="menu" id="menu">
+        
     </div>
     <div class="navbar">
-        <i1 class="fa-solid fa-house"></i1>
-        <i2 class="fa-regular fa-heart"></i2>
-        <i3 class="fa-solid fa-user"></i3>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-user"></i>
     </div>
+    <script src="assets/js/data.js"></script>
+    <script>
+        var contenedorCat = document.getElementById("menu");
+
+        categorias.forEach((cat,index) => {
+            contenedorCat.innerHTML += `<div style="background:${cat.color}" class="element" onclick="go(${index})">
+                <div class="bg">${cat.icono}</div>
+                <h4>${cat.name}</h4>
+            </div>`;
+        });
+        
+        function go(catindex){
+            window.location = "tiendas.html?catIndex="+catindex;
+        }
+        
+    </script>
 </body>
 </html>

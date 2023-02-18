@@ -48,19 +48,24 @@ nav {
     font-family: 'Sofia', cursive;
     font-size: 45px;
 }
-.nav > i {
-    position:absolute;
-    right: 60px;
+.navbar   {
+    width: 100%;
+    position:fixed;
+    right: 0px;
+    bottom: 0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    background-color: white;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
 }
-.navbar > i1{
-    position: absolute;
-    
-}
-.navbar > i2 {
-    position: absolute;
-    right: 10px;
-}
-.navbar > i3 {
-    position: absolute;
-    right: 30px;
+
+.navbar > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
