@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Deliver-eat</title>
-
+    <title>On-Going </title>
     <link rel="stylesheet" href="assets/css/estilos.css">
-
-   
-
+    <script src="https://kit.fontawesome.com/0449d46f67.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="bg"><img src="assets/img/bg.svg" alt=""></div>
-<div id="user">
-<img id=logo src="img/logo.png" alt="">
-</div>
 
-<section id="formulario">
-    <h1>sign up </h1>
-    <input class="control text-box" type="text" placeholder="email">
-    <input class="control text-box" type="password" placeholder="password">
-    <input class="boton" type="button" value="Sign in">
-    <label><input class="checkbox" type="checkbox">Rember me</label>
-    <a href="#">Need help</a>
-</section>
-    
+<main class="container">
+    <div class="forms">
+        <div class="buttonsForm">
+            <input  id="loginForm" class="button" type="button" value="Login" onclick="loginForm()">
+            <input id="loginForm" class="button" type="button" value="Register" onclick="registerForm()">
+        </div>
+        <section id="formulario-login">
+            <input class="text-box" id="emailLogin" type="text" placeholder="email"></i>
+            <input class="text-box" id="passwordLogin" type="password" placeholder="password">
+            <input class="boton" type="button" value="Login" onclick="login()">
+        </section>
+
+        <section id="formulario-register">
+            <input id="nameSign" class="text-box" type="text" placeholder="Name">
+            <input id="lastNameSign" class="text-box" type="text" placeholder="Lastname">
+            <input id="emailSign" class="text-box" type="text" placeholder="Email">
+            <input id="numberSign" class="text-box" type="text" placeholder="Number">
+            <input id="passwordSign" class="text-box" type="password" placeholder="Password">
+            <input  class="boton" type="button" value="Sign In" onclick="sign()">
+        </section>
+    </div>
+</main>
+
 </body>
+
+<script src="assets/js/controlador.js"></script>
 </html>
 

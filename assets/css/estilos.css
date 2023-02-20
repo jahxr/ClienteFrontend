@@ -19,43 +19,68 @@
     padding: 10px;
     height: 20vh;
 }
-#formulario{
-    background-color: rgba(0, 0, 0, 0.555);
+.container{
+    background-color: rgba(211, 208, 208, 0.555);
+    border-radius: 5px;
+    margin-top:25%;
+    margin-bottom: 25%;
+    
+}
+
+
+.buttonsForm{
+    display: flex;
+    justify-content: space-around;
+    padding:15px;
+    
+}
+.buttonsForm>.button{
+    background-color: #c3b7b756;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius:35px;
+    color:#000;
+    text-decoration: none;
+    width: 45%;
+}
+
+.buttonsForm>.button:hover{
+    background-color:   #f3999956 ;
+}
+
+#formulario-login{
+   display:block;
     color: #fff;
-    width: 60%;
-    border-radius: 8px;
-    padding: 10px 50px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    padding: 8px 40px;
+}
+
+#formulario-register{
+    display:none;
+    color: #fff;
+    width: 80%;
+    padding: 8px 40px;
+
+    
 }
 #formulario h1 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     font-family: 'Sofia', cursive;
 }
 input {
     width: 100%;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
    
 }
-.control-formulario{
-    width: 50px;
-    padding: 15%;
-    box-sizing: border-box;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border-width: 0;
-    
-    
-}
 .text-box{
-    background-color: #33333356;
+    background-color: #e9e7e756;
 }
 .boton{
-    background-color: rgb(177, 81, 81);
+    background-color: rgb(97, 177, 81);
     font-weight: bolder;
     color: #fff;
     margin-top: 20px;
@@ -63,8 +88,39 @@ input {
     
 }
 .boton:hover{
-    background-color: rgb(179, 50, 11);
+    background-color: rgb(50, 116, 32);
+   
 }
 .checkbox {
     Text-align: left;
+}
+body {
+    background: linear-gradient(152deg, #8b5fe3, #7cd04c);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    -o-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }

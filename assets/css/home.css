@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sofia&display=swap');
 nav {
     width: 100%;
     display: flex;
@@ -11,6 +10,7 @@ nav {
 .search{
     width: 100%;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .search > input {
@@ -20,33 +20,44 @@ nav {
     box-sizing: border-box;
     border: 1px solid rgb(100, 100, 100);
     font-family: 'Sofia', cursive;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .search > i {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 2px;
+    left: 10px;
     color: rgb(0, 0, 0);
+    font-size: 30px;
     
 }
-
 
 
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 .element{
-    border: 1px solid rgb(229, 255, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     margin-left: 2px;
     padding-left: 20px;
     aspect-ratio: 1/1;
+    color: rgb(40, 40, 40);
+    
+   
 }
 .element h4{
-    font-family: 'Sofia', cursive;
-    font-size: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    color:white;
+}
+
+.imgbg{
+    width: 100%;
+    
 }
 .navbar   {
     width: 100%;
@@ -68,4 +79,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
+    font-size: 2rem;
+}
+.bg{
+    font-size: 4rem;
+    
 }
