@@ -1,8 +1,8 @@
 let users = [
     {
         "username":"hola",
-        "email":"hola@.com",
-        "password":"xxxxx",
+        "email":"hola",
+        "password":"x",
         "orders": []
     },
     {
@@ -38,16 +38,8 @@ function login() {
    
 }
 
+
 function sign() {
     const nameSign = document.getElementById("nameSign").value;
 }
 
-function loginForm(){
-    document.getElementById('formulario-login').style.display='block';
-    document.getElementById('formulario-register').style.display='none';
-}
-
-function registerForm(){
-    document.getElementById('formulario-register').style.display='block';
-    document.getElementById('formulario-login').style.display='none';
-}

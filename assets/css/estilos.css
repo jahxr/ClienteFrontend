@@ -4,6 +4,12 @@
     justify-content: center;
 
 }
+.logo{
+    display:flex;
+    justify-content: center;
+    border-radius: 50%;
+
+}
 .bg{
     position:absolute;
     top: 0;
@@ -15,17 +21,15 @@
 }
 
 
-#logo {
-    padding: 10px;
-    height: 20vh;
-}
 .container{
-    background-color: rgba(211, 208, 208, 0.555);
-    border-radius: 5px;
+
+    margin: 25% 5%;
     margin-top:25%;
     margin-bottom: 25%;
     
 }
+
+
 
 
 .buttonsForm{
@@ -39,8 +43,8 @@
     display: flex;
     justify-content: center;
     border: 1px solid #000;
-    border-radius:35px;
-    color:#000;
+    border-radius:50px;
+    color:#5b5b5b;
     text-decoration: none;
     width: 45%;
 }
@@ -48,22 +52,33 @@
 .buttonsForm>.button:hover{
     background-color:   #f3999956 ;
 }
-
-#formulario-login{
-   display:block;
-    color: #fff;
-    width: 80%;
-    padding: 8px 40px;
-}
-
-#formulario-register{
-    display:none;
-    color: #fff;
-    width: 80%;
-    padding: 8px 40px;
-
+.title{
+    display:flex;
+    justify-content: center;
     
+    font-size: 2.5rem;
+    color:#000;
 }
+#formulario-login{
+  
+    color: #fff;
+    width: 80%;
+    padding: 8px 40px;
+}
+#formulario-signup{ 
+    color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .inputs{
+    margin-top:5px;
+ }
+ .inputs>a{
+    text-decoration: none;
+    color: #fff;
+}
+
 #formulario h1 {
     font-size: 40px;
     font-weight: 700;
@@ -77,25 +92,28 @@ input {
    
 }
 .text-box{
-    background-color: #e9e7e756;
+    background-color: #8b8b8bbd;
+    border-radius: 38px;
 }
 .boton{
-    background-color: rgb(97, 177, 81);
+    background-color: rgb(110, 101, 200);
     font-weight: bolder;
     color: #fff;
     margin-top: 20px;
     padding: 30px;
+    border-radius: 38px;
+
     
 }
 .boton:hover{
-    background-color: rgb(50, 116, 32);
+    background-color: #514278;
    
 }
 .checkbox {
     Text-align: left;
 }
 body {
-    background: linear-gradient(152deg, #8b5fe3, #7cd04c);
+    background: #171717;
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 19s ease infinite;
@@ -124,3 +142,114 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    box-shadow: 0px 0px 10px 2px #7565fc;
+    color: #7565fc
+  }
+  
+  .form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 5px #7565fc;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em;
+    font-size: 1.2em;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: #7565fc;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #7565fc;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #7565fc;
+  }
+  
+  .form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+  }
+  
+  .button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #7565fc;
+    color: #252525;
+  }
+  
+  .button1:hover {
+    background-color: black;
+    color: #7565fc;
+  }
+  
+  .button2 {
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: #7565fc;
+  }
+  
+  .button2:hover {
+    background-color: black;
+    color: #7565fc;
+  }
+  
+  .button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: #7565fc;
+  }
+  
+  .button3:hover {
+    background-color: red;
+    color: #7565fc;
+  }

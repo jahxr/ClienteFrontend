@@ -1,0 +1,15 @@
+.tienda > img{
+    width: 10%;
+    
+}
+.tienda{border: 1px solid rgba(128, 128, 128, 0.486);}
+#tiendas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+body{
+    background-color: #171717;
+    color: #7565fc;
+}
