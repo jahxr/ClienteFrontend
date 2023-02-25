@@ -22,15 +22,11 @@
 
 
 .container{
-
     margin: 25% 5%;
     margin-top:25%;
     margin-bottom: 25%;
     
 }
-
-
-
 
 .buttonsForm{
     display: flex;
@@ -59,18 +55,7 @@
     font-size: 2.5rem;
     color:#000;
 }
-#formulario-login{
-  
-    color: #fff;
-    width: 80%;
-    padding: 8px 40px;
-}
-#formulario-signup{ 
-    color: #fff;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
- }
+
  .inputs{
     margin-top:5px;
  }

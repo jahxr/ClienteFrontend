@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sofia&display=swap');
 
 body {
-    background: linear-gradient(152deg, #283035, #080808);
+    background: #171717;
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 19s ease infinite;
@@ -37,7 +37,7 @@ body {
     height: 80vh;
 }
 .card {
-    background: rgba(23, 23, 23, 0.34);
+    background: rgba(49, 49, 49, 0.34);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
@@ -50,6 +50,7 @@ body {
     align-items:center;
     width: 90%;
     height: 80%;
+    animation: boxShadow 3s infinite;
 }
 
 button {
@@ -91,3 +92,8 @@ button {
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
+   @keyframes boxShadow {
+    0% {box-shadow: 0px 0px 0px 0px #7565fc;}
+    50% {box-shadow: 0px 0px 10px 0px #7565fc;}
+    100% {box-shadow: 0px 0px 0px 0px #7565fc;}
+  }

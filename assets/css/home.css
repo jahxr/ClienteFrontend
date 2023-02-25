@@ -17,7 +17,13 @@ nav {
 }
 .bg > img {
     width: 30%;
+    
 }
+.bg{
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
 .element{
 
     border-radius: 20px;
@@ -149,4 +155,6 @@ body {
   
   
   
-
+.tienda{
+    background: #616e77;
+}

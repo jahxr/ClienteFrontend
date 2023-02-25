@@ -2,10 +2,17 @@
     width: 10%;
     
 }
-.tienda{border: 1px solid rgba(128, 128, 128, 0.486);}
-#tiendas{
+.tienda{
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 15px;
+    padding: 5px;
+}
+    
+    #tiendas{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:10px;
+    margin:10px;
     
 }
 
