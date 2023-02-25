@@ -1,37 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sofia&display=swap');
+
 nav {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #7565fc;
 }
-
-.search{
-    width: 100%;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.search > input {
-    width: 100%;
-    padding: 8px 16px;
-    border-radius: 16px;
-    box-sizing: border-box;
-    border: 1px solid rgb(100, 100, 100);
-    font-family: 'Sofia', cursive;
-    font-size: 15px;
-}
-
-.search > i {
-    position: absolute;
-    top: 2px;
-    left: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    
-}
-
 
 .menu {
     display: grid;
@@ -39,20 +15,34 @@ nav {
     row-gap: 20px;
     column-gap: 20px;
 }
+.bg > img {
+    width: 30%;
+}
 .element{
-    border: 1px solid rgb(0, 0, 0);
+
     border-radius: 20px;
     margin-left: 2px;
     padding-left: 20px;
     aspect-ratio: 1/1;
-    color: rgb(40, 40, 40);
-    
+    color: #7565fc;
+    animation: boxShadow 3s infinite;
    
 }
+
+.element:hover{
+    box-shadow: 0px 0px 10px 0px #7565fc;
+    transform: scale(1.05);
+}
+@keyframes boxShadow {
+    0% {box-shadow: 0px 0px 0px 0px #7565fc;}
+    50% {box-shadow: 0px 0px 10px 0px #7565fc;}
+    100% {box-shadow: 0px 0px 0px 0px #7565fc;}
+  }
+        
 .element h4{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
-    color:white;
+    color:#7565fc;
 }
 
 .imgbg{
@@ -69,10 +59,15 @@ nav {
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-	align-content: center;
-    background-color: white;
-    padding-bottom: 20px;
+    background-color: #171717;
+    color: #7565fc;
+    padding: 10px 0px;
     font-size: 1.3rem;
+
+}
+
+body {
+    background-color: #171717;
 }
 
 .navbar > i {
@@ -80,17 +75,78 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.nav {
 
+.nav {
+    color: #7565fc;
+    padding: 10px 16px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: stretch;
-	align-content: stretch;
-    font-size: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+    font-size: 1.5rem;
 }
-.bg{
-    font-size: 4rem;
-    
-}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #7e4fd4;
+    box-shadow: 0px 0px 3px #f3f3f3;
+    padding-right: 40px;
+    color: #fff;
+  }
+  
+  .input::placeholder,
+  .input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+  }
+  
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7e4fd4;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  
+  
+
