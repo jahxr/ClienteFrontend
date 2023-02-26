@@ -1,5 +1,9 @@
+body{
+    background-color: #171717;
+    color: #7565fc;
+}
 .tienda > img{
-    width: 10%;
+    width: 40%;
     
 }
 .tienda{
@@ -19,6 +23,13 @@
 body{
     background-color: #171717;
     color: #7565fc;
+}
+.productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.element{
+    margin:8px;
 }
 .element:hover{
     box-shadow: 0px 0px 10px 0px #7565fc;

@@ -9,46 +9,18 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Stores</title>
   <link rel="stylesheet" href="/assets/css/tiendas.css">
-  <link rel="shortcut icon" href="assets/img/final logillo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/logobuchonbg.png" type="image/x-icon">
+</head>
 </head>
 
 <body>
+  <h1 id="nombreCategoria"></h1>
   <div id="tiendas">
     <!-- Renderizado desde JS-->
   </div>
 
 
   <script src="assets/js/data.js"></script>
-  <script>
-    const queryString = window.location.search;
-    console.log(queryString);
-    const urlParams = new URLSearchParams(queryString);
-
-    const categoriaH1 = document.getElementById('nombrecategoria').innerHTML = categorias[urlParams.get('catIndex')].name;
-
-
-    var tiendasCat = tiendas.filter(function (tienda) {
-      return tienda.idCategoria === Number.parseInt(urlParams.get('catIndex'))
-    })
-
-    tiendasCat.forEach(tienda => {
-
-    });
-  </script>
-  <script>
-    var contenedorTiendas = document.getElementById("tiendas");
-
-    tiendas.forEach((tienda, index) => {
-      contenedorTiendas.innerHTML += `<div  class="element" onclick="go(${index})">
-        <div class="bg">${cat.icono}</div>
-        <h4>${cat.name}</h4>
-    </div>`;
-    });
-  </script>
-
+  <script src="assets/js/contentshop.js"></script>
 </body>
-
-<script src="assets/js/controlador.js"></script>
-
-
 </html>

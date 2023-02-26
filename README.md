@@ -544,3 +544,21 @@ Frontend del lado del cliente de "Delivery eat"
         ]
 
     }
+
+
+function pedirProducto() {
+   
+        {
+            nombreProducto:categorias[catSelect].name[nameSelect].productos[productoSelect].Producto,
+            descripcion: categorias[catSelect].name[empresaSelect].productos[productoSelect].descripcion,
+            cantidad:document.getElementById('cantProduct').value,
+            precio:categorias[catSelect].name[nameSelect].productos[productoSelect].precio
+        }
+    )
+}
+
+  var container = document.getElementById('tiendas');
+        container.innerHTML += `<div class="tienda element" id="nombretienda" onclick="goTienda(${index})">
+        <h4>${tienda.name}</h4>
+        ${tienda.imagen}
+      </div>`

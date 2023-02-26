@@ -197,8 +197,8 @@ body {
     border: none;
     outline: none;
     transition: .4s ease-in-out;
-    background-color: #7565fc;
-    color: #252525;
+    background-color: #252525;
+    color: #7565fc;
   }
   
   .button1:hover {
@@ -237,4 +237,15 @@ body {
   .button3:hover {
     background-color: red;
     color: #7565fc;
+  }
+  .active{
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    background-color: #7565fc;
+    color:#252525;
   }

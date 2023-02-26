@@ -1,3 +1,4 @@
+
 var categorias = [
 
 
@@ -37,15 +38,10 @@ var categorias = [
         "color": "#283035;",
         "icono": '<img src="https://cdn-icons-png.flaticon.com/512/3211/3211272.png"> '
     },
-    {
-        "name": "SEX shop",
-        "id": 5,
-        "color": "#283035;",
-        "icono": '<img src="https://cdn-icons-png.flaticon.com/512/4776/4776796.png"> '
-    },
+    
 ]
 
-var comidas = [
+var tiendas = [
     {
         name: "denny's •Areopuerto",
         imagen: '<img src=" https://i.kym-cdn.com/entries/icons/original/000/022/830/logo-socialshare.png">',
@@ -60,36 +56,43 @@ var comidas = [
             {
                 name: "AMERICA’S DINNER DOUBLE",
                 precio: 279,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/HAMBURGUESA/AllAmerican.jpg",
                 descripcion: "Dos porciones de carne, queso americano, cebollas caramelizadas y salsa All-American en un pan brioche."
             },
             {
                 name: "BACON SLAMBURGER",
                 precio: 229,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/HAMBURGUESA/D3036.jpg",
                 descripcion: "Una hamburguesa 100% carne de res, con crujientes papas hash browns, un huevo cocinado a tu gusto, dos tiras de tocino y todo cubierto de salsa de queso."
             },
             {
                 name: "CLUB SANDWICH",
                 precio: 229,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/HAMBURGUESA/D3041.jpg",
                 descripcion: "Finas rebanadas de pechuga de pavo, tocino crujiente, lechuga, tomate y mayonesa en pan de 7 granos tostado."
             },
             {
                 name: "AVOCADO CAESAR SALAD",
                 precio: 239,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/ENTRADAS/ACSAL.jpg",
                 descripcion: "Elige entre una pechuga de pollo o un filete de salmón salvaje de Alaska, ambos perfectamente sazonados y asados, acompañados de aguacate fresco, tocino crujiente desmoronado y quesos italianos rallados por encima de lechuga romana fresca, mezclado con aderezo caesar y acompañada de pan."
             },
             {
                 name: " CRANBERRY APPLE CHICKEN SALAD",
                 precio: 169,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/ENTRADAS/CRANBERRY.jpg",
                 descripcion: "Pechuga de pollo asada, nueces glaseadas y arándanos secos, sobre lechuga mixta. Servida con aderezo de vinagre balsámico o tu elección de aderezo y pan."
             },
             {
                 name: "JUMBO BUFFALO WINGS",
                 precio: 235,
+                imagen:"https://www.dennys.hn/Imagenes/CATEGORIAS/ENTRADAS/D3272.jpg",
                 descripcion: "Orden de 6 alitas grandes fritas bañadas en salsa buffalo. Servidas con apio y salsa dip de tu elección."
             },
             {
                 name: "MEGA PRIME RIB PHILLY MELT",
                 precio: 279,
+                imagen: "https://www.dennys.hn/Imagenes/CATEGORIAS/HAMBURGUESA/PHMELMEGA.jpg",
                 descripcion: "Carne de res prime rib, con champiñones, mezcla de pimientos y cebollas asadas, cubiertas con salsa de queso pepper jack y una mezcla de quesos rallados en pan hoagie a la plancha con una sabrosa mantequilla de ajo."
             },
         ]
@@ -152,7 +155,7 @@ var comidas = [
             {
                 name: "McMuffin™ de Salchicha y Huevo",
                 precio: 133,
-                imagen: '<img src="https://mcdonalds.com.hn/imagen/menu-products/1640645692_04_McMuffinSalchichayhuevo_1624549276.png">',
+                imagen: "https://mcdonalds.com.hn/imagen/menu-products/1640645692_04_McMuffinSalchichayhuevo_1624549276.png",
                 descripcion: "an muffin inglés cubierto de margarina suave, una rodaja de jamón, huevo y queso cheddar amarillo."
             },
             {
@@ -539,19 +542,8 @@ var comidas = [
             },
         ]
 
-    }
-]
+    },
 
-
-comidas.forEach(producto => {
-    var container = document.getElementById('tiendas');
-    container.innerHTML += `<div class="tienda" id="nombretienda">
-    <h4>${producto.name}</h4>
-    ${producto.imagen}
-  </div>`
-});
-
-var bebidas = [
     {
         name: "espresso americano",
         imagen: "",
@@ -627,5 +619,272 @@ var bebidas = [
         productos: [
 
         ]
-    }
-];
+    },
+
+     {
+        name: "walmart cascadas",
+        imagen: "",
+        idCategoria: 2,
+        productos: [
+            {
+                name: "Azucar Blanca",
+                precio: 43.40,
+                descripcion: "Marca Dona Matilde - 1800gr"
+            },
+            {
+                name: "Pasta",
+                precio: 9.70,
+                descripcion: "Tipo Spaghetti Marca Bruni - 200gr"
+            }, {
+                name: "Frijol",
+                precio: 95.70,
+                descripcion: "Grano Rojo Marca Sabemas En Bolsa - 1400gr"
+            },
+            {
+                name: "Gaseosa",
+                precio: 42.20,
+                descripcion: "Marca Coca Cola En Envase Tipo Pet - 2000 Ml"
+            }, {
+                name: "Jugo",
+                precio: 62,
+                descripcion: "Sula De Naranja Premium Sin Pulpa- 1890 Ml"
+            },
+            {
+                name: "Medallon",
+                precio: 65.50,
+                descripcion: "Empanizado Junior Pollo Rey - 324gr"
+            }, {
+                name: "Cajilla De Huevos",
+                precio: 139.50,
+                descripcion: "Blancos Marca Don Cristobal Tamaño Grande - 30 unidades"
+            }, {
+                name: "Leche",
+                precio: 617,
+                descripcion: " Instantánea Nestlé® NIDO® 1+ Protección® Alimento Complementario Lata- 2.2kg"
+            },
+            {
+                name: "Leche",
+                precio: 38,
+                descripcion: "Leche Entera Sula Uht Enriquecida y Fortificada - 0.946ml"
+            }, {
+                name: "Jamón",
+                precio: 79,
+                descripcion: "JamónDe Pavo Fud 250 Gr"
+            },
+            {
+                name: "Tocino",
+                precio: 65,
+                descripcion: "Tocino Chimex Ahumado De Cerdo - 170gr"
+            }, {
+                name: "Papa",
+                precio: 22,
+                descripcion: "Papa Clasificada Libra - 2 Unidades Por Lb."
+            }, {
+                name: "Banano",
+                precio: 7.70,
+                descripcion: "Banano Dátil Del Fresco Libra - 4 Unidades Por Lb. Aproximadamente"
+            },
+            {
+                name: "Pechuga",
+                precio: 78,
+                descripcion: "Pechuga Deshuesada Marca Don Cristobal Fresco Grane"
+            }, {
+                name: "Costilla Cerdo ",
+                precio: 84.85,
+                descripcion: "Costilla Cerdo Premium Progcarne Fresco Granel - 1Lb"
+            },
+            {
+                name: "Papel Higienico",
+                precio: 147,
+                descripcion: "apel Higienico Marca Rosal Plus Doble Hoja 12 Rollos XG"
+            },
+
+        ]
+
+    }, {
+        name: "walmart anillo periferico",
+        imagen: "",
+        idCategoria: 2,
+        productos: [
+            {
+                name: "Azucar Blanca",
+                precio: 43.40,
+                descripcion: "Marca Dona Matilde - 1800gr"
+            },
+            {
+                name: "Pasta",
+                precio: 9.70,
+                descripcion: "Tipo Spaghetti Marca Bruni - 200gr"
+            }, {
+                name: "Frijol",
+                precio: 95.70,
+                descripcion: "Grano Rojo Marca Sabemas En Bolsa - 1400gr"
+            },
+            {
+                name: "Gaseosa",
+                precio: 42.20,
+                descripcion: "Marca Coca Cola En Envase Tipo Pet - 2000 Ml"
+            }, {
+                name: "Jugo",
+                precio: 62,
+                descripcion: "Sula De Naranja Premium Sin Pulpa- 1890 Ml"
+            },
+            {
+                name: "Medallon",
+                precio: 65.50,
+                descripcion: "Empanizado Junior Pollo Rey - 324gr"
+            }, {
+                name: "Cajilla De Huevos",
+                precio: 139.50,
+                descripcion: "Blancos Marca Don Cristobal Tamaño Grande - 30 unidades"
+            }, {
+                name: "Leche",
+                precio: 617,
+                descripcion: " Instantánea Nestlé® NIDO® 1+ Protección® Alimento Complementario Lata- 2.2kg"
+            },
+            {
+                name: "Leche",
+                precio: 38,
+                descripcion: "Leche Entera Sula Uht Enriquecida y Fortificada - 0.946ml"
+            }, {
+                name: "Jamón",
+                precio: 79,
+                descripcion: "JamónDe Pavo Fud 250 Gr"
+            },
+            {
+                name: "Tocino",
+                precio: 65,
+                descripcion: "Tocino Chimex Ahumado De Cerdo - 170gr"
+            }, {
+                name: "Papa",
+                precio: 22,
+                descripcion: "Papa Clasificada Libra - 2 Unidades Por Lb."
+            }, {
+                name: "Banano",
+                precio: 7.70,
+                descripcion: "Banano Dátil Del Fresco Libra - 4 Unidades Por Lb. Aproximadamente"
+            },
+            {
+                name: "Pechuga",
+                precio: 78,
+                descripcion: "Pechuga Deshuesada Marca Don Cristobal Fresco Grane"
+            }, {
+                name: "Costilla Cerdo ",
+                precio: 84.85,
+                descripcion: "Costilla Cerdo Premium Progcarne Fresco Granel - 1Lb"
+            },
+            {
+                name: "Papel Higienico",
+                precio: 147,
+                descripcion: "apel Higienico Marca Rosal Plus Doble Hoja 12 Rollos XG"
+            },
+        ]
+
+    }, {
+        name: "pricesmart anillo periferico",
+        imagen: "",
+        idCategoria: 2,
+        productos: [
+            {
+                name: "Eggo Waffles",
+                precio: 314.95,
+                descripcion: "40 Unidades / 35 g / 1.2 oz"
+            },
+            {
+                name: "Aceite de Oliva Extra Virgen ",
+                precio: 419.95,
+                descripcion: "Member's Selection Aceite de Oliva Extra Virgen Extraído en Frío 2 L"
+            }, {
+                name: "Atún en Agua",
+                precio: 249.95,
+                descripcion: "Member's Selection Atún en Agua 6 Unidades / 170 g"
+            },
+            {
+                name: "Pringles",
+                precio: 659.95,
+                descripcion: "Pringles Paquete Surtido 48 Unidades / 20 g"
+            }, {
+                name: "Kirkland Signature",
+                precio: 879.95,
+                descripcion: "Kirkland Signature Alimento Completo para Gato Pollo y Arroz / 11.34 Kg"
+            },
+            {
+                name: "Purina Dog Chow",
+                precio: 1799.95,
+                descripcion: "Purina Dog Chow Adulto Raza Grande 55 lb / 25 kg"
+            }, {
+                name: "Suavitel",
+                precio: 529.95,
+                descripcion: "Suavitel Complete Suavizante Todo en Uno con Aroma a Fresca Primavera 8.5 L"
+            },
+            {
+                name: "OxiClean",
+                precio: 474.95,
+                descripcion: "OxiClean Removedor de Manchas 4.98 kg / 235 lavadas"
+            }, {
+                name: "Axion ",
+                precio: 184.95,
+                descripcion: "Axion Lavaplatos en Crema Aloe 6 Unidades / 425 g"
+            },
+            {
+                name: "Scotch-Brite",
+                precio: 157.95,
+                descripcion: "Scotch-Brite Fibra Verde Limpieza Pesada 12 Unidades"
+            },
+        ]
+
+    }, {
+        name: "pricesmart mall multiplaza",
+        imagen: "",
+        idCategoria: 2,
+        productos: [
+            {
+                name: "Eggo Waffles",
+                precio: 314.95,
+                descripcion: "40 Unidades / 35 g / 1.2 oz"
+            },
+            {
+                name: "Aceite de Oliva Extra Virgen ",
+                precio: 419.95,
+                descripcion: "Member's Selection Aceite de Oliva Extra Virgen Extraído en Frío 2 L"
+            }, {
+                name: "Atún en Agua",
+                precio: 249.95,
+                descripcion: "Member's Selection Atún en Agua 6 Unidades / 170 g"
+            },
+            {
+                name: "Pringles",
+                precio: 659.95,
+                descripcion: "Pringles Paquete Surtido 48 Unidades / 20 g"
+            }, {
+                name: "Kirkland Signature",
+                precio: 879.95,
+                descripcion: "Kirkland Signature Alimento Completo para Gato Pollo y Arroz / 11.34 Kg"
+            },
+            {
+                name: "Purina Dog Chow",
+                precio: 1799.95,
+                descripcion: "Purina Dog Chow Adulto Raza Grande 55 lb / 25 kg"
+            }, {
+                name: "Suavitel",
+                precio: 529.95,
+                descripcion: "Suavitel Complete Suavizante Todo en Uno con Aroma a Fresca Primavera 8.5 L"
+            },
+            {
+                name: "OxiClean",
+                precio: 474.95,
+                descripcion: "OxiClean Removedor de Manchas 4.98 kg / 235 lavadas"
+            }, {
+                name: "Axion ",
+                precio: 184.95,
+                descripcion: "Axion Lavaplatos en Crema Aloe 6 Unidades / 425 g"
+            },
+            {
+                name: "Scotch-Brite",
+                precio: 157.95,
+                descripcion: "Scotch-Brite Fibra Verde Limpieza Pesada 12 Unidades"
+            },
+        ]
+
+    },
+]
