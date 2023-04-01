@@ -7,9 +7,25 @@
     <title>Product</title>
     <link rel="stylesheet" href="assets/css/productos.css">
     <link rel="shortcut icon" href="assets/img/logobuchonbg.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0449d46f67.js" crossorigin="anonymous"></script>
 </head>
 </head>
 <body>
+    <div id="modal">
+        <div class="container">
+            <h1 id="namepr"></h1>
+        <img id="imgpr" src="" alt="">
+        <p id="despr"></p>
+        <h4 id="pricepr"></h4>
+        <i onclick="plus()" class="fa-solid fa-plus"></i>
+        <span id="cant">1</span>
+        <i onclick="minus()" class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+
+
+    </div>
     <div  class="productos" id="productos">
         <!-- Renderizado desde JS-->
       </div>
@@ -17,4 +33,5 @@
 </body>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/product.js"></script>
+
 </html>

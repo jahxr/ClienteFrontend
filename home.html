@@ -11,10 +11,8 @@
     <link rel="shortcut icon" href="assets/img/logobuchonbg.png" type="image/x-icon">
 </head>
 <body>
-    <div>
-       
-    </div>
     <div class="nav">
+        
         <div class="input-wrapper">
             <button class="icon"> 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
@@ -24,7 +22,7 @@
             </button>
             <input placeholder="search.." class="input" name="text" type="text">
           </div>
-        <i class="fa-solid fa-cart-arrow-down"></i></i>
+        <i onclick="window.location = 'cart.html'" class="fa-solid fa-cart-arrow-down"></i></i>
     </div>
     <div class="menu" id="menu">
         
@@ -36,7 +34,7 @@
     </div>
     <script src="assets/js/data.js"></script>
     <script>
-        
+
         var contenedorCat = document.getElementById("menu");
         categorias.forEach((cat,index) => { 
             contenedorCat.innerHTML += `<div style="background:${cat.color} " class="element" onclick="go(${index})">

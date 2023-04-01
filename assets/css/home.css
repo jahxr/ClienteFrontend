@@ -11,9 +11,9 @@ nav {
 
 .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
+    grid-template-columns: 0.8fr 0.8fr;
+    row-gap: 8px;
+    column-gap: 8px;
 }
 .bg > img {
     width: 30%;
@@ -28,7 +28,7 @@ nav {
 
     border-radius: 20px;
     margin-left: 2px;
-    padding-left: 20px;
+    padding-left: 15px;
     aspect-ratio: 1/1;
     color: #7565fc;
     animation: boxShadow 3s infinite;
@@ -48,7 +48,7 @@ nav {
 .element h4{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
-    color:#7565fc;
+    
 }
 
 .imgbg{
@@ -74,6 +74,8 @@ nav {
 
 body {
     background-color: #171717;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar > i {
