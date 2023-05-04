@@ -198,18 +198,18 @@
                 products:  cart,
                 location: locations
             }
-            fetch('http://localhost:3000/client/CreateOrder', {
+            fetch('https://backend-jahxr.vercel.app/client/CreateOrder', {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {"Content-type": "application/json; charset=UTF-8"}
             })
             .then(response => response.json())
             .then(json => {
-                //window.localStorage.setItem('cart', '[]')
+                window.localStorage.setItem('cart', '[]')
                 window.location = 'home.html';
             })
             .catch(err => {
-                alert("password incorrect");
+                alert("error");
                 return;
             });
         }
