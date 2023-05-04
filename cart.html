@@ -138,24 +138,19 @@
         </div>
         <div id="formCard">
             <p id="num">Nombre en la tarjeta</p>
-            <input placeholder="cesarin belikon" id="namecard" type="text">
+            <input placeholder="" id="namecard" type="text">
             <p id="num">numero de la tarjeta</p>
-            <input placeholder="101010101010" id="num" type="password">
+            <input placeholder="" id="numcard" type="text">
             <p id="code">Security Code</p>
-            <input placeholder="001" id="code" type="password">
+            <input placeholder="" id="code" type="password">
             <p id="code">Expire date</p>
-            <input placeholder="12/12" id="date" type="month">
+            <input placeholder="" id="date" type="month">
+            <br>
+            <button onclick="createOrder()">Create Order</button>
         </div>
     </div>
     <div id="listProducts">
-        <div class="product">
-            <img width="30%" height="100%" src="" alt="">
-            <section class="info">
-                <h5>Producto 1</h5>
-                <p>description</p>
-            </section>
-            <h4>$9.99</h4>
-        </div>
+        
     </div>
     
     <div class="bottomDiv">
@@ -165,7 +160,23 @@
     <script src="assets/js/Control.Geocoder.js"></script>
     <script src="assets/js/mapa.js"></script>
     <script>
-      
+        var cart = [];
+        if (window.localStorage.getItem('cart') == undefined) {
+            window.localStorage.setItem('cart', '[]')
+        }
+        cart = JSON.parse(window.localStorage.getItem('cart'));
+        const contPr = document.getElementById('listProducts')
+        contPr.innerHTML = '';
+        cart.forEach(product => {
+            contPr.innerHTML += `<div class="product">
+            <img width="30%" height="100%" src="${product.imagen}" alt="">
+            <section class="info">
+                <h5>${product.name}</h5>
+                <p>${product.descripcion}</p>
+            </section>
+            <h4>L.${product.precio}</h4>
+        </div>`
+        });
         function viewMap() {
             var contLoca = document.getElementById('modalLocation')
             contLoca.style.zIndex = 999;
@@ -175,6 +186,32 @@
             contLoca.style.zIndex = -999;
             var contPay = document.getElementById('modalPayment')
             contPay.style.zIndex = 999;
+        }
+
+        function createOrder() {
+            const data = {
+                service: service*0.2,
+                total: service,
+                date: new Date(),
+                payment: document.getElementById('numcard').value,
+                idClient: window.localStorage.getItem('user'),
+                products:  cart,
+                location: locations
+            }
+            fetch('http://localhost:3000/client/CreateOrder', {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {"Content-type": "application/json; charset=UTF-8"}
+            })
+            .then(response => response.json())
+            .then(json => {
+                //window.localStorage.setItem('cart', '[]')
+                window.location = 'home.html';
+            })
+            .catch(err => {
+                alert("password incorrect");
+                return;
+            });
         }
     </script>
 </body> 

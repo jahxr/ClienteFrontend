@@ -39,8 +39,9 @@ function login() {
     })
     .then(response => response.json())
     .then(json => {
+        window.localStorage.setItem('user', json._id)
         window.location = 'home.html';
-        console.log(json)})
+    })
     .catch(err => {
         alert("password incorrect");
         return;
@@ -68,8 +69,8 @@ function sign() {
     })
     .then(response => response.json())
     .then(json => {
+        window.localStorage.setItem('user', json._id)
         window.location = 'home.html';
-        console.log(json)
     })
     .catch(err => {
         alert("User alreay exist")

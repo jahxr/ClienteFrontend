@@ -32,7 +32,6 @@
         <i class="fa-solid fa-bars-staggered"></i>
         <i class="fa-solid fa-user"></i>
     </div>
-    <script src="assets/js/data.js"></script>
     <script>
 
 
@@ -42,8 +41,8 @@
             .then(response => response.json())  // convertir a json
             .then(json => {
                 var contenedorCat = document.getElementById("menu");
-                json.forEach((cat,index) => { 
-                    contenedorCat.innerHTML += `<div style="background:${cat.color} " class="element" onclick="go(${index})">
+                json.forEach(cat => { 
+                    contenedorCat.innerHTML += `<div style="background:${cat.color} " class="element" onclick="go(${cat.id})">
                         <div class="bg">${cat.icono}</div>
                         <h4>${cat.name}</h4>
                     </div>`;

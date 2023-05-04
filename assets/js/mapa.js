@@ -2,6 +2,7 @@ let locations = [
     L.latLng(14.059899, -87.220381),
     L.latLng(14.053579, -87.221811)
 ];
+let service = 0;
 
 var map1 = L.map('map', { scrollWheelZoom: false });
 var control;
@@ -187,6 +188,7 @@ window.onload = async () => {
         var summary = routes[0].summary;
         // alert distance and time in km and minutes
         distance = Number((summary.totalDistance / 1000)).toFixed(2);
+        service = distance*10
         $('#DistanceInfo').html((distance + ' KM'));
         $('#TimeInfo').html((Math.round(summary.totalTime % 3600 / 60)+20)+ ' minutes');
     });
