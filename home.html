@@ -35,14 +35,23 @@
     <script src="assets/js/data.js"></script>
     <script>
 
-        var contenedorCat = document.getElementById("menu");
-        categorias.forEach((cat,index) => { 
-            contenedorCat.innerHTML += `<div style="background:${cat.color} " class="element" onclick="go(${index})">
-                <div class="bg">${cat.icono}</div>
-                <h4>${cat.name}</h4>
-            </div>`;
-        });
+
+        // Solicitud GET (Request).
+        fetch('https://backend-jahxr.vercel.app/client/categories')
+            // Exito
+            .then(response => response.json())  // convertir a json
+            .then(json => {
+                var contenedorCat = document.getElementById("menu");
+                json.forEach((cat,index) => { 
+                    contenedorCat.innerHTML += `<div style="background:${cat.color} " class="element" onclick="go(${index})">
+                        <div class="bg">${cat.icono}</div>
+                        <h4>${cat.name}</h4>
+                    </div>`;
+                });
         
+            })    //imprimir los datos en la consola
+            .catch(err => console.log('Solicitud fallida', err)); // Capturar errores
+                
         function go(catindex){
             window.location = "tiendas.html?catIndex="+catindex;
         }
